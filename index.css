@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400&display=swap');
+
+body {
+    font-family: 'Gothic A1', sans-serif;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 48px;
+    color: hsl(0%, 0%, 0%);
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 900;
+    font-size: 3em;
+}
+
+
+h1, .navlinks {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navlinks > ul {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-left: 24px;
+}
+
+.navlinks li + li {
+    margin-left: 24px;
+}
+
+.navlinks a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+}
+
+
+.action {
+    text-transform: uppercase;
+    color: inherit;
+}
+
