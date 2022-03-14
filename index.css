@@ -52,11 +52,19 @@ a {
 }
 
 h2 {
-font-family: 'Gothic A1', sans-serif;
-font-weight: 600;
-font-size: 30px;
-margin-top: 50px;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 50px;
+    padding-left: 48px;
+}
 
+p  {
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 10px 48px;
+    inline-size: 450px;
 }
 
 .grid-container {
