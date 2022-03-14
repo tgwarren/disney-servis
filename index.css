@@ -3,6 +3,7 @@
 
 body {
     font-family: 'Gothic A1', sans-serif;
+    color: hsl(0%, 0%, 0%);
 }
 
 
@@ -10,7 +11,6 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 12px 48px;
-    color: hsl(0%, 0%, 0%);
 }
 
 h1 {
@@ -41,13 +41,19 @@ a {
 .navlinks a {
     text-transform: uppercase;
     text-decoration: none;
-    color: inherit;
+    color: hsl(0, 0%, 40%);
     font-weight: 600;
+}
+
+a:hover {
+    color: hsl(209, 84%, 51%);
+    transition: color 125ms;
 }
 
 .action {
     text-transform: uppercase;
     color: inherit;
+    padding: 24px 300px;
 
 }
 
@@ -64,13 +70,13 @@ p  {
     font-size: 20px;
     margin-top: 20px;
     padding: 10px 48px;
-    inline-size: 450px;
+    inline-size: 400px;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(7, 150px);
-    grid-template-rows: repeat(3, 150px);
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(2, 150px);
     height: 300px;
 }
 
@@ -99,12 +105,6 @@ p  {
     grid-row: 2 / span 1;
 }
 
-.grid-item:nth-child(7) {
-    grid-column: 5 / span 3;
-    grid-row: 1 / span 3;
-    max-width: 50%;
-}
-
 .grid-container {
     list-style: none;
     padding: 2px;
@@ -114,14 +114,81 @@ p  {
     transform: scale(0.5);
 }
 
-.story {
-    display: flex;
-    position:relative; left: 700px; 
+article {
+    
 }
 
-.stacey {
-    max-width: 50%;
+#stacey {
+    width: 600px;
+    height: 350px;
+    max-width: 100%;
+    padding-top: 30px;
 }
+
+.class {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.peters {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+h4 {
+    margin-left: auto;
+    margin-right: auto;
+    width:60%;
+}
+
+#site {
+    height:200px;
+    width: 500px;
+}
+
+#testimonials {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5em;
+    padding-top: 30px;
+}
+
+#sp {
+    grid-column: 1 / span 2;
+    justify-self: center;
+    padding-top: 30px;
+}
+
+figcaption {
+    text-align: center;
+    padding-top: 30px;
+}
+
+footer {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 3.5fr 1.5fr .5fr;
+    
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+}
+
+#social {
+    float: right;
+} 
+#footer2 {
+    display: grid;
+    grid-template-rows: auto;   
+    grid-template-columns: 1fr 1fr;
+}
+
 
 
 
