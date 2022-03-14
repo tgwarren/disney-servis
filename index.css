@@ -24,10 +24,6 @@ h1, .navlinks {
     display: inline-block;
 }
 
-a {
-    text-decoration: none;
-}
-
 .navlinks > ul {
     display: flex;
     flex-flow: row nowrap;
@@ -67,7 +63,7 @@ h2 {
 
 p  {
     font-family: 'Gothic A1', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 20px;
     padding: 10px 48px;
     inline-size: 400px;
@@ -78,6 +74,9 @@ p  {
     grid-template-columns: repeat(3, 150px);
     grid-template-rows: repeat(2, 150px);
     height: 300px;
+    list-style: none;
+    padding: 2px;
+    position: relative;
 }
 
 .grid-item:nth-child(1) {
@@ -105,33 +104,41 @@ p  {
     grid-row: 2 / span 1;
 }
 
-.grid-container {
-    list-style: none;
-    padding: 2px;
-}
-
 .grid-item {
     transform: scale(0.5);
 }
 
 article {
-    
+    position: absolute;
+    top: 2%;
+    bottom: 0;
+    left: 50%;
+    z-index: 1;
+    margin: auto;
+    width: 600px;
+    height: 350px;
+    text-align: end;
+    line-height: 1em;
 }
 
-#stacey {
+.stacey {
     width: 600px;
     height: 350px;
     max-width: 100%;
     padding-top: 30px;
 }
 
-.class {
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
+.headliner {
+    text-align: left;
 }
 
-.peters {
+.thoughts {
+    text-align: left;
+    line-height: 25px;
+    width: 100%;
+}
+
+.sp {
     display:block;
     margin-left: auto;
     margin-right: auto;
