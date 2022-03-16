@@ -10,13 +10,14 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 12px 48px;
+    padding: 12px 48px 0px;
 }
 
 h1 {
     font-family: 'Dancing Script', cursive;
     font-weight: 900;
     font-size: 3em;
+    
 }
 
 
@@ -51,6 +52,7 @@ a:hover {
     text-transform: uppercase;
     color: inherit;
     padding: 24px 300px;
+    text-decoration: none;
 
 }
 
@@ -168,9 +170,9 @@ figure > figcaption {
 }
 
 
-.navigation  {
-    display: inline-block;
-    text-align: center;
+.products {
+    display: inline-flexbox;
+    flex-direction: column;
     border-spacing: 100px;
     margin-left: 500px;
 }
