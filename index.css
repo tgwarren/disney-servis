@@ -6,7 +6,6 @@ body {
     color: hsl(0%, 0%, 0%);
 }
 
-
 header {
     display: flex;
     justify-content: space-between;
@@ -17,9 +16,7 @@ h1 {
     font-family: 'Dancing Script', cursive;
     font-weight: 900;
     font-size: 3em;
-    
 }
-
 
 h1, .navlinks {
     display: inline-block;
@@ -51,18 +48,11 @@ a:hover {
 .action {
     text-transform: uppercaser;
     background-color:hsl(195, 93%, 88%);
-    color: hsl(209, 84%, 51%);
+    color: hsl(0%, 0%, 0%);
     border: 2px solid hsl(244, 93%, 52%);
     padding: 15px;
     text-decoration: none;
     border-radius: 25px;
-}
-
-@media screen and (max-width: 600px) {
-    .navlinks .action {
-        float: none;
-        width: 100%;
-    }    
 }
 
 main { 
