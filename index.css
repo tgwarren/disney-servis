@@ -3,13 +3,20 @@
 
 body {
     font-family: 'Gothic A1', sans-serif;
-    color: hsl(0%, 0%, 0%);
+    color: hsl(0, 0%, 0%);
 }
 
 header {
     display: flex;
     justify-content: space-between;
     padding: 12px 48px 0px;
+}
+
+@media (max-width: 800px){
+    header {
+        display: flex;
+        flex-flow: column no wrap;
+}
 }
 
 h1 {
@@ -46,9 +53,9 @@ a:hover {
 }
 
 .action {
-    text-transform: uppercaser;
+    text-transform: uppercase;
     background-color:hsl(195, 93%, 88%);
-    color: hsl(0%, 0%, 0%);
+    color: hsl(0, 0%, 0%);
     border: 2px solid hsl(244, 93%, 52%);
     padding: 15px;
     text-decoration: none;
