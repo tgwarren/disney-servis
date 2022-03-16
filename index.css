@@ -15,7 +15,7 @@ header {
 @media (max-width: 800px){
     header {
         display: flex;
-        flex-flow: column no wrap;
+        flex-flow: column nowrap;
 }
 }
 
