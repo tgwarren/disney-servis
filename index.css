@@ -57,6 +57,7 @@ a:hover {
 main { 
     background-color: hsl(210, 8%, 95%);
 }
+
 h2 {
     font-family: 'Gothic A1', sans-serif;
     font-weight: 600;
@@ -123,6 +124,7 @@ article {
     height: 350px;
     text-align: end;
     line-height: 1em;
+    border: 2px black;
 }
 
 article > img {
@@ -166,7 +168,7 @@ figure > figcaption {
 }
 
 
-table  {
+.navigation  {
     display: inline-block;
     text-align: center;
     border-spacing: 100px;
