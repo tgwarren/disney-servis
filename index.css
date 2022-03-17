@@ -16,7 +16,8 @@ header {
     header {
         display: flex;
         flex-flow: column nowrap;
-}
+        align-items: center;
+    }        
 }
 
 h1 {
@@ -29,6 +30,13 @@ h1, .navlinks {
     display: inline-block;
 }
 
+@media (max-width: 800px){
+    h1 {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+}
 .navlinks > ul {
     display: flex;
     flex-flow: row nowrap;
@@ -37,6 +45,17 @@ h1, .navlinks {
 
 .navlinks li + li {
     margin-left: 24px;
+}
+
+@media (max-width: 800px) {
+    .navlinks >ul {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .navlinks li + li {
+        margin-left: 0;
+    }
 }
 
 .navlinks a {
@@ -62,8 +81,22 @@ a:hover {
     border-radius: 25px;
 }
 
+@media (max-width: 800px) {
+    .action {
+        max-width: fit-content;
+        align-items: center;
+    }
+}
+
 main { 
     background-color: hsl(210, 8%, 95%);
+}
+
+@media (max-width: 800px) {
+    main {
+        background-color: hsl(0, 0%, 100%);
+        text-align: center;
+}
 }
 
 h2 {
@@ -116,6 +149,19 @@ p  {
     grid-row: 2 / span 1;
 }
 
+@media (max-width: 800px) {
+    .grid-container {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 1;
+        margin-bottom: 1px;
+}
+    .grid-item {
+        display: flex;
+        flex-direction: column;
+        max-width: fit-content;
+    }
+}
+
 article {
     position: absolute;
     top: 20%;
@@ -142,6 +188,12 @@ article > p {
     line-height: 25px;
     width: auto;
     padding: 0;
+}
+
+@media (max-width: 1000px) {
+    article {
+        display: none;
+}
 }
 
 .statement {
@@ -177,6 +229,12 @@ figure > figcaption {
     height:100px;
     width: 250px;
     grid-column: 1;
+}
+
+@media (max-width: 800px) {
+    #site {
+        display: none;
+}
 }
 
 strong {
@@ -255,3 +313,17 @@ ul > li {
     width: 25px;
 }
 
+@media (max-width: 800px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+        padding-left: 10%;
+    }
+    .slinks {
+        display: none;
+    }
+    ul {
+        display: flex;
+        justify-content: center;
+    }
+}
