@@ -151,8 +151,7 @@ p  {
 
 @media (max-width: 800px) {
     .grid-container {
-        grid-column: 1 / span 2;
-        grid-row: 1 / span 1;
+        grid-template: repeat(6 50% / 1fr);
         margin-bottom: 1px;
 }
     .grid-item {
@@ -168,7 +167,6 @@ article {
     left: 50%;
     right: 10%;
     line-height: 1em;
-    border: 2px solid black;
 }
 
 article > img {
@@ -178,16 +176,14 @@ article > img {
 }
 
 article > h2 {
-    text-align: left;
+    text-align: center;
     margin: 3%;
     padding: 0;
 }
 
-article > p {
+article > blockquote {
     text-align: center;
     line-height: 25px;
-    width: auto;
-    padding: 0;
 }
 
 @media (max-width: 1000px) {
